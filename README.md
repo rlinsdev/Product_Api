@@ -11,5 +11,8 @@ $ dotnet ef database update
 
 ```
 
+## Tools
+* DBeaver
+
 ## Links:
-* [GPT Chat](https://chat.openai.com/chat)
+
