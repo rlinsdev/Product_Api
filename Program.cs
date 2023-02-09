@@ -25,7 +25,7 @@ app.MapPost("api/v1/products", async (AppDbContext context, ListingRequest listi
     return Results.Accepted($"api/v1/productstatus/{listingRequest.RequestId}", listingRequest);
 });
 
-app.MapGet("api/vi/products/{requesetId}", (AppDbContext context, string requestId) => {
+app.MapGet("api/v1/productstatus/{requestId}", (AppDbContext context, string requestId) => {
     var listingRequest = context.ListingRequests.FirstOrDefault(lr => lr.RequestId == requestId);
     if (listingRequest == null)
         return Results.NotFound();
