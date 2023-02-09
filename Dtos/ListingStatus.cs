@@ -1,6 +1,6 @@
 namespace AsyncProductAPI.Dtos
 {
-    public class ListenStatus
+    public class ListingStatus
     {
         public string? RequestStatus {get; set;}
         public string? EstimatedCompetitionTime { get; set; }
